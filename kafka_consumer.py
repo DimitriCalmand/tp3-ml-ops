@@ -21,7 +21,7 @@ def main():
         bootstrap_servers=bootstrap_servers,
         auto_offset_reset='earliest',  # Lit depuis le début du topic
         enable_auto_commit=True,
-        group_id='consumer-group-1',  # Groupe de consommateurs
+        group_id='2',  # Groupe de consommateurs
         value_deserializer=lambda x: x.decode('utf-8') if x else None
     )
     
