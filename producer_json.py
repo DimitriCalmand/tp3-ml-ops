@@ -31,9 +31,9 @@ def main():
     logger.info("Topic cible: calmand")
 
     try:
-        # Création du message JSON
+        # Création du message JSON avec features de maison
         message = {
-            "data": [1, 2, 3, 4]
+            "features": [150, 3, 10]  # taille_m2, nb_chambres, age_maison
         }
 
         logger.info(f"Envoi du message JSON: {json.dumps(message, indent=2)}")
