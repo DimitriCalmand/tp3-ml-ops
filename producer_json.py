@@ -33,7 +33,7 @@ def main():
     try:
         # Création du message JSON
         message = {
-            "data": [[1, 2], [3, 4]]
+            "data": [1, 2, 3, 4]
         }
 
         logger.info(f"Envoi du message JSON: {json.dumps(message, indent=2)}")
